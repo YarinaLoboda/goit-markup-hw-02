@@ -1,0 +1,206 @@
+/* Палитра основных цветов сайта */
+/* Первичный цвет текста #757575 */
+/* Вторичный цвет текста #212121 */
+/* Акцент текста  #2196F3; */
+/* Фон страницы #FFFFFF; */
+/* Фон за пределами страницы #e5e5e5; */
+/* Вторичный фон секции #F5F4FA; */
+/* Фон футера 2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --alt-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --body-bgc: #ffffff;
+  --body-out-bgc: #e5e5e5;
+  --alt-section-bgc: #f5f4fa;
+  --footer-bgc: #2f303a;
+}
+
+/* Общие стили */
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: var(body-bgc);
+  color: var(--primary-text-color);
+}
+.link {
+  color: var(--alt-text-color);
+  text-decoration: none;
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+.logo .black-part {
+  color: #000000;
+}
+.logo .white-part {
+  color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+
+/* Стили шапки сайта */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+
+.link.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.link.contact:hover,
+.link.contact:focus {
+  color: var(--accent-text-color);
+}
+
+/* Стили секции герой */
+
+.hero {
+  background-color: var(--footer-bgc);
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+.hero-button {
+  padding: 1em 1em;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+.hero-button:focus,
+.hero-button:hover {
+  /* background-color: #ffffff; */
+  /* color: var(--accent-text-color); */
+}
+
+/* Стили секции features */
+.title-invisible {
+  display: none;
+}
+.features-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--alt-text-color);
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+/* Стили секции work */
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--alt-text-color);
+}
+/* Стили секции team */
+.team {
+  background: var(--alt-section-bgc);
+}
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--alt-text-color);
+}
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  /* text-align: center; */
+  color: #000000;
+}
+.team-position {
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  /* text-align: center; */
+}
+/* Стили секции footer*/
+.footer {
+  background-color: var(--footer-bgc);
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--accent-text-color);
+}
+/* Классы страницы портфолио */
+.portfolio-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--alt-text-color);
+}
+.portfolio-discription {
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+}
+.portfolio-button {
+  margin: 8px;
+  padding: 1em 1em;
+  border-radius: 4px;
+  border: none;
+  background-color: #f5f4fa;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--alt-text-color);
+  cursor: pointer;
+}
